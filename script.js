@@ -1,5 +1,5 @@
 document.getElementById('searchForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // предотвратить отправку формы
+    event.preventDefault(); // предотвратить
 
     const movieTitle = document.getElementById('movieTitle').value.trim();
     if (movieTitle === '') {
@@ -13,7 +13,7 @@ document.getElementById('searchForm').addEventListener('submit', function(event)
 });
 
 function searchMovie(title) {
-    const apiKey = '7d462ca6'; // ваш API ключ с omdbapi.com
+    const apiKey = '7d462ca6'; //
     const url = `https://www.omdbapi.com/?apikey=${apiKey}&t=${encodeURIComponent(title)}`;
     
     return fetch(url)
